@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+    body, html {
+      height: 100%;
+      line-height: 1.8;
+    }
+
+    /* Full height image header */
+    .bgimg-1 {
+      background-position: center;
+      background-size: cover;
+      background-image: url("https://www.w3schools.com/w3images/mac.jpg");
+      min-height: 100%;
+    }
+
+    .w3-bar .w3-button {
+      padding: 16px;
+    }
+    </style>
+  </head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">COURSE</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> DEV TEAM</a>
+      <a href="project.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> PROJECT</a>
+      <a href="Concept.html" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> CONCEPT</a>
+      <a href="DataBase.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> DATABASES</a>
+      <a href="DataBase.html"w3-bar-item w3-button"><i class="fa fa-user"></i> DOCUMENTATION</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Fundamentals of Computing</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
+    <span class="w3-large">This course is an introduction to the fundamentals of Computer Science that will provide
+       students with a foundation for future courses in Computer Science. The course is a broad survey of the 
+       discipline through topics that allow students to understand the capabilities of computer systems in terms of:
+        the computer architecture; operating systems and computer networks; software and software development; data 
+        organization and visualization; and the potential of computing machines</span>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">DESCRIPTION OF THE TEAM</h3>
+  <p class="w3-center w3-large">Key features</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Responsive</p>
+      <p>We are known to be a responsive team who quickly addresses client inquiries, ensuring
+         no question goes unanswered. we adapt swiftly to changes, 
+         proactively seeking solutions to emerging challenges. 
+         our dedication to responsiveness builds trust and fosters strong, 
+         lasting relationships with clients.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Passion</p>
+      <p>Our team is deeply passionate about our work, consistently going above
+         and beyond to deliver exceptional results. We thrive on innovation and 
+         creativity, always seeking new ways to improve and excel. This unwavering
+          dedication fuels our drive to achieve excellence in every project we undertake</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Design</p>
+      <p>Our team excels in design-driven coding, blending creativity with technical expertise to 
+        craft visually stunning and highly functional applications. We prioritize user experience,
+         ensuring our designs are intuitive and engaging. This commitment to excellence in design 
+         sets us apart, making our projects both beautiful and effective.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Support</p>
+      <p>Our team excels in providing top-notch IT support, ensuring that all technical issues
+         are resolved swiftly and efficiently. We are dedicated to maintaining seamless operations, 
+         offering proactive solutions to prevent potential problems. This commitment to exceptional
+          support helps our clients stay productive and focused on their core activities.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">THE TEAM</h3>
+  <p class="w3-center w3-large">The ones who runs this website.</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="rigoberto.jpg" alt="" style="width:100%">
+        <div class="w3-container">
+          <h3>Rigoberto Vellos</h3>
+          <p class="w3-opacity">Web Designer</p>
+          <p> My name is Rigoberto Vellos, I am Currently pursuing my bachelors degree in Computer science at the University Of Belize in Belmopan. I was born in Belize City but i moved to Corozal and then relocated to Belmopan for school. I like video games, computers, gym and basketball.</p>
+          <p><a href="https://rigobertovellos.github.io/Resume/"><button class="w3-button w3-light-grey w3-block">My Resume</button></a></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        
+        <img src="shelton.jpg" alt="Shelton Toralla" style="width:100%">
+        <div class="w3-container">
+          <h3>Shelton Toralla</h3>
+          <p class="w3-opacity">Programmer</p>
+          <p>My name is Shelton Toralla, and I was born and raised in Benque Viejo del Carmen. I graduated from MTHS in 2017, where I developed a passion for computer hardware and software. I have a solid understanding of Android firmwares and hardware, which I enjoy exploring and experimenting with. In my free time, I love playing football and immersing myself in video games. Both activities allow me to connect with friends and unwind after a busy day. I'm always eager to learn new skills and stay updated on the latest technology trends. Whether I'm troubleshooting a device or kicking a ball on the field, I approach everything with enthusiasm and dedication.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact: whatsapp - +501-615-3125</button></p>
+          <a href="https://rawcdn.githack.com/Sh3lt0n98/individual-project/f85e4869a7d5bd801c4694d50f67ce7f31a86ae9/foc1/index.html"><button class="w3-button w3-light-grey w3-block">My Individual Work</button></a>
+          <a href="https://rawcdn.githack.com/Sh3lt0n98/individual-project/9d5c746b3cade8c8d0655725864f68ee3a256103/foc1/website/index.html"><button class="w3-button w3-light-grey w3-block">My Resume</button></a></p>
+          <a href="https://github.com/Sh3lt0n98"><button class="w3-button w3-light-grey w3-block">My Github Repository</button></a></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="RonaldoCoc.jpg" alt="Ronaldo" style="width:100%">
+        <div class="w3-container">
+          <h3>Ronaldo Coc</h3>
+          <p class="w3-opacity">Web Designer</p>
+          <p>Ronaldo Coc is currently a full-time student at the Faculty of Science and Technology, where he’s working towards an Associate’s Degree in Information Technology. He’s eager to gain practical experience through his studies, as he believes this will enhance his career flexibility and opportunities. In his free time, Ronaldo enjoys playing sports, especially football, and has a passion for making music.</p>
+          <p><a href="https://ronaldorj7.github.io/resume/new%201.html"><button class="w3-button w3-light-grey w3-block">My Resume</button></a></p>
+          <p><a href="https://github.com/Ronaldorj7"><button class="w3-button w3-light-grey w3-block">My GitHub Repository</button></a></p><button class="w3-button w3-light-grey w3-block">
+          <p><a href="https://ronaldorj7.github.io/Individual-Final-Project/HTML/"><button class="w3-button w3-light-grey w3-block">My Individual Final Project</button></a></p><button class="w3-button w3-light-grey w3-block">
+       
+       
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="Michael-Cowo.jpg" alt="Michael" style="width:100%">
+        <div class="w3-container">
+          <h3>Michael Omar Cowo</h3>
+          <p class="w3-opacity">Designer</p>
+          <p>My name is Michael Cowo, originally from San Antonio Village. I relocated to
+             Belmopan to pursue an associate’s degree in Information Technology.
+              I hold a diploma in Business from Julian Cho Technical High School.
+               Currently, I am learning JavaScript and have already gained substantial
+                experience in HTML and CSS. Although I am passionate about football,
+                 I prefer watching the game rather than playing it due to the physical demands</p>
+          <p>
+            <a href="file:///C:/Users/user4/Documents/Michael%20Cowo%20Resume%204%20B.html"><button class="w3-button w3-light-grey w3-block">My Resume</button></a></p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
